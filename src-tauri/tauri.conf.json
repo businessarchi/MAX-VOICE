@@ -65,7 +65,7 @@
   },
   "plugins": {
     "updater": {
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDRDNkYzMzNBN0Y3MUNDRTMKUldUanpIRi9Pak52VEV4Nkx6OW0vL0JGRWUzWnh2eHRHWlg3WEtYbmg2c2FpYU1FNDFqZWdYN2cK",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDFDNjJGMUI5ODEwNUY3OUYKUldTZjl3V0J1ZkZpSEpSMjc5T0FVbVVlZjRDOUtvMnVIU1U2RC9Ud3NGaUlKOFJsd3FDN2dtWU8K",
       "endpoints": [
         "https://github.com/businessarchi/MAX-VOICE/releases/latest/download/latest.json"
       ]

@@ -1,6 +1,6 @@
 [package]
 name = "max-voice"
-version = "0.1.0"
+version = "0.1.1"
 description = "Max Voice — speech-to-text desktop (Hello-Max edition, fork of cjpais/Handy)"
 authors = ["Mélodie Melguen — Business Architecte", "cjpais (upstream Handy)"]
 edition = "2021"

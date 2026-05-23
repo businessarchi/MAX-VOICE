@@ -510,9 +510,9 @@
       "acknowledgments": {
         "title": "شكر وتقدير",
         "whisper": {
-          "title": "Whisper.cpp",
+          "title": "Max Voice provides fast, local speech-to-text processing — your voice stays on your device.",
           "description": "استنتاج عالي الأداء لنموذج التعرف التلقائي على الكلام Whisper من OpenAI",
-          "details": ".يستخدم Handy برنامج Whisper.cpp لمعالجة سريعة ومحلية لتحويل الكلام إلى نص. شكراً للعمل الرائع الذي قام به Georgi Gerganov والمساهمون"
+          "details": "Max Voice provides fast, local speech-to-text processing — your voice stays on your device."
         }
       }
     },

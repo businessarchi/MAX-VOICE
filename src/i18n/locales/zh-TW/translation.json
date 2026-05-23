@@ -532,9 +532,9 @@
       "acknowledgments": {
         "title": "致謝",
         "whisper": {
-          "title": "Whisper.cpp",
+          "title": "Max Voice provides fast, local speech-to-text processing — your voice stays on your device.",
           "description": "針對 OpenAI Whisper 自動語音識別模型的高效能推理引擎",
-          "details": "Handy 使用 Whisper.cpp 進行快速的本機語音轉文字處理。感謝 Georgi Gerganov 和貢獻者們的傑出工作"
+          "details": "Max Voice provides fast, local speech-to-text processing — your voice stays on your device."
         }
       }
     }

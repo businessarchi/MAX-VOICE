@@ -532,9 +532,9 @@
       "acknowledgments": {
         "title": "Reconocimientos",
         "whisper": {
-          "title": "Whisper.cpp",
+          "title": "Max Voice provides fast, local speech-to-text processing — your voice stays on your device.",
           "description": "Inferencia de alto rendimiento del modelo de reconocimiento automático de voz Whisper de OpenAI",
-          "details": "Handy usa Whisper.cpp para procesamiento de voz a texto rápido y local. Gracias al increíble trabajo de Georgi Gerganov y colaboradores."
+          "details": "Max Voice provides fast, local speech-to-text processing — your voice stays on your device."
         }
       }
     }

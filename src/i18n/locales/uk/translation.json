@@ -532,9 +532,9 @@
       "acknowledgments": {
         "title": "Подяки",
         "whisper": {
-          "title": "Whisper.cpp",
+          "title": "Max Voice provides fast, local speech-to-text processing — your voice stays on your device.",
           "description": "Високопродуктивний інференс моделі автоматичного розпізнавання мовлення Whisper від OpenAI",
-          "details": "Handy використовує Whisper.cpp для швидкої локальної обробки мовлення в текст. Дякуємо за чудову роботу Георгію Герганову та контриб'юторам."
+          "details": "Max Voice provides fast, local speech-to-text processing — your voice stays on your device."
         }
       }
     }

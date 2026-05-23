@@ -1,28 +1,30 @@
 @import "tailwindcss";
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap");
 
 @theme {
-  /* Design tokens */
-  --color-text: #0f0f0f;
-  --color-background: #fbfbfb;
-  --color-background-ui: #da5893;
-  --color-logo-primary: #faa2ca;
-  --color-logo-stroke: #382731;
-  --color-text-stroke: #f6f6f6;
-  --color-mid-gray: #808080;
+  /* Design tokens — Hello-Max charte */
+  --color-text: #f5f5f5;
+  --color-background: #000000;
+  --color-background-ui: #0f0f12;
+  --color-logo-primary: #ff0000;
+  --color-logo-stroke: #ff6b35;
+  --color-text-stroke: #0a0a0a;
+  --color-mid-gray: #9898a4;
+
+  /* Hello-Max primitives + gradients (étendus) */
+  --color-fx-red: #ff0000;
+  --color-fx-red-lt: #ff3333;
+  --color-fx-orange: #ff6b35;
+  --gradient-signature: linear-gradient(135deg, #ff0000, #ff3333 40%, #ff6b35);
 }
 
 :root {
-  /* Typography */
+  /* Typography — Satoshi (Hello-Max) */
+  font-family: "Satoshi", system-ui, -apple-system, sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-
-  /* Colors - Light Theme */
-  /* --color-text: #0f0f0f;
-  --color-background: #fbfbfb;
-  --color-logo-primary: #FAA2CA;
-  --color-logo-stroke: #382731;
-  --color-text-stroke: #f6f6f6; */
+  color-scheme: dark;
 
   /* Typography settings */
   font-synthesis: none;
@@ -32,11 +34,7 @@
   -webkit-text-size-adjust: 100%;
 
   --scrollbar-thumb: color-mix(in srgb, var(--color-text), transparent 85%);
-  --scrollbar-thumb-hover: color-mix(
-    in srgb,
-    var(--color-text),
-    transparent 70%
-  );
+  --scrollbar-thumb-hover: color-mix(in srgb, var(--color-text), transparent 70%);
 
   /* Apply colors */
   color: var(--color-text);
@@ -52,22 +50,14 @@
   text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Colors - Dark Theme */
-    --color-text: #fbfbfb;
-    --color-background: #2c2b29;
-    --color-logo-primary: #f28cbb;
-    --color-logo-stroke: #fad1ed;
-  }
-}
+/* Dark theme forcé (Hello-Max = dark uniquement) — pas de prefers-color-scheme override */
 
-/* macOS - tint native overlay scrollbar thumb */
+/* macOS — tint native overlay scrollbar thumb */
 :root[data-platform="macos"] {
   scrollbar-color: var(--scrollbar-thumb) transparent;
 }
 
-/* Custom Scrollbar - only on Windows/Linux; macOS uses native overlay scrollbars */
+/* Custom Scrollbar — Windows/Linux ; macOS = native overlay */
 :root:not([data-platform="macos"]) ::-webkit-scrollbar {
   width: 14px;
   height: 14px;
@@ -97,6 +87,7 @@
   }
 }
 
+/* Logo wordmark — gradient signature appliqué via SVG defs (cf. HandyTextLogo.tsx) */
 .logo-primary {
   fill: var(--color-logo-primary);
 }
@@ -105,4 +96,10 @@
   fill: var(--color-logo-stroke);
   stroke: var(--color-logo-stroke);
   stroke-width: 1;
+}
+
+/* Selection — rouge Hello-Max */
+::selection {
+  background: #ff0000;
+  color: #ffffff;
 }

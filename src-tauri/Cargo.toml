@@ -1,11 +1,11 @@
 [package]
-name = "handy"
-version = "0.8.3"
-description = "Handy"
-authors = ["cjpais"]
+name = "max-voice"
+version = "0.1.0"
+description = "Max Voice — speech-to-text desktop (Hello-Max edition, fork of cjpais/Handy)"
+authors = ["Mélodie Melguen — Business Architecte", "cjpais (upstream Handy)"]
 edition = "2021"
 license = "MIT"
-default-run = "handy"
+default-run = "max-voice"
 
 [profile.dev]
 incremental = true # Compile your binary in smaller steps.

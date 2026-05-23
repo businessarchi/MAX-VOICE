@@ -49,3 +49,21 @@ tags: [max-voice, fork, tauri, speech-to-text]
 ## Crédit upstream (obligatoire MIT)
 
 > Built on top of [Handy](https://github.com/cjpais/Handy) by cjpais — a free, open-source, offline speech-to-text application. MIT license preserved.
+
+## 🔬 Roadmap technique
+
+### Parakeet V3 multilangue (issue ouverte)
+
+**État** : transcribe-rs 0.3.x marque Parakeet comme English-only (`languages: &["en"]`). Sherpa-onnx supporte les TDT transducers mais n'a pas de modèle Parakeet V3 multilangue préconverti.
+
+**Workaround actuel (v0.1.x)** : utiliser Whisper Large v3 pour FR/multilangue.
+
+**Plan fix (v0.2.0+)** :
+1. Convertir NVIDIA Parakeet TDT 0.6B v3 (NeMo) → format sherpa-onnx (encoder+decoder+joiner+tokens)
+2. Remplacer transcribe-rs par sherpa-rs côté backend Parakeet uniquement (Whisper reste sur transcribe-rs)
+3. Activer `supports_language_selection: true` pour Parakeet V3
+4. Passer `validated_language` dans les params sherpa-rs transducer
+5. Tester FR/EN/ES/DE en transcription réelle
+
+**Effort estimé** : 2-3 jours (ML conversion + Rust refactor + tests).
+**Tracker** : voir GitHub issue dédiée.
